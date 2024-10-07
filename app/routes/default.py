@@ -16,7 +16,7 @@ def post_temperature():
     if user_input:
         try:
             temperature = float(user_input)
-            message = check_temperature(temperature)  # Pass the temperature here
+            message = check_temperature(temperature)
         except ValueError:
             message = "Please enter a valid number (use '.' for decimal)."
 
