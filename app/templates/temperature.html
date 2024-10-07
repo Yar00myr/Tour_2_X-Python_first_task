@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form method="POST" action="/">
+        <label for="temperature">Enter temperature in Celsius:</label>
+        <input type="text" name="temperature" id="temperature" required>
+        <button type="submit">Check</button>
+    </form>
+
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+{% endblock %}
